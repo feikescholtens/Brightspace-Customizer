@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin: 10px;
+    }
+    
+    body {
+      width: 300px;
+    }
+    
+    table {
+      margin-top: -5px;
+      padding: 5px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    th {
+      font-size: 18px;
+      text-align: left;
+    }
+    
+    td:nth-child(1) {
+      width: calc(100vw - 75px);
+    }
+    
+    td:nth-child(2) {
+      width: 75px;
+    }
+    
+    td:nth-child(3),
+    th:nth-child(3) {
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    img {
+      display: inline;
+      width: 64px;
+      vertical-align: middle;
+      transform: translateY(-10%);
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <b><i><h1><img src="images/logo_128px.png">Brightspace Colour Changer &#11088;
+    </h1></i></b>
+  <table>
+    <tr>
+      <th>Element</th>
+      <th>Colour</th>
+      <th>X</th>
+    </tr>
+  </table>
+  <script src="popup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "Brightspace Colour Changer",
+  "version": "1.0",
+  "description": "This browser-extension allows you to change the terrible colour choise on D2L Birghtspace platform and make it your own!",
+  "permissions": ["declarativeContent", "storage", "activeTab"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://brightspace.tudelft.nl/*"
+    ],
+      "js": ["content.js"]
+    }
+  ],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logo_16px.png",
+      "32": "images/logo_32px.png",
+      "48": "images/logo_48px.png",
+      "128": "images/logo_128px.png"
+    }
+  },
+  "icons": {
+    "16": "images/logo_16px.png",
+    "32": "images/logo_32px.png",
+    "48": "images/logo_48px.png",
+    "128": "images/logo_128px.png"
+  },
+  "manifest_version": 2
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      user-select: none;
+    }
+    
+    body {
+      width: 300px;
+    }
+    
+    table {
+      margin-top: -5px;
+      padding: 5px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    th {
+      font-size: 18px;
+      text-align: left;
+    }
+    
+    td:nth-child(1) {
+      width: calc(100vw - 75px);
+    }
+    
+    td:nth-child(2) {
+      width: 75px;
+    }
+    
+    td:nth-child(3),
+    th:nth-child(3) {
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    input {
+      cursor: pointer;
+    }
+    
+    p {
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      width: calc(100% - 20px);
+      padding-bottom: 10px;
+      font-weight: 700;
+      line-height: 1.2em;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <table>
+    <tr>
+      <th>Body elements</th>
+      <th>Color</th>
+      <th>X</th>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>Text elements</th>
+      <th>Color</th>
+      <th>X</th>
+    </tr>
+  </table>
+  &nbsp;
+  <p>Colors are automatically stored for this browser. If you want to apply your theme to another computer, or share it with someone, click <a href="" id="download_theme">here</a>, and import it with the option below on the other device.</p>
+  <script src="popup.js"></script>
+</body>
+
+</html>
