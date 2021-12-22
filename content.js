@@ -18,7 +18,7 @@ let elements = [
 ];
 
 //ADDS THE EDITABLE BRANDING BAR TO THE PAGE
-let branding_bar_html = new DOMParser().parseFromString("<div id='branding_bar' style='background-color: #00a6d6; height: 4px; width: 100vw; position: absolute; top:0;'></div>", "text/html");
+let branding_bar_html = new DOMParser().parseFromString("<div id='branding_bar' style='background-color: #00a6d6; height: 4px; width: 100%; position: absolute; top:0;'></div>", "text/html");
 //Create the branding bar.
 let branding_bar = branding_bar_html.body.firstChild;
 //Convert the branding bar from a string to a Node object.
